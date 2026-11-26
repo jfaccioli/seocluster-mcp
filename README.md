@@ -1,5 +1,7 @@
 # SEOcluster.ai — Hosted SEO MCP Server for Google Search Console
 
+[![SEOcluster.ai MCP connector](https://glama.ai/mcp/connectors/ai.seocluster/mcp/badges/score.svg)](https://glama.ai/mcp/connectors/ai.seocluster/mcp)
+
 Connect **Claude Code**, **OpenAI Codex**, **Cursor**, **Google Antigravity**, and **Windsurf** directly to live **Google Search Console** page ownership, keyword cannibalization checks, grounded SEO briefs, fail-closed Page Edits, a 50-rule Anti-AI prose + GEO citation gate, and 28-day post-deploy lift tracking.
 
 - **Hosted Streamable HTTP Endpoint:** `https://seocluster.ai/api/mcp` *(zero local npm/Python packages required)*
