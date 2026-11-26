@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.seocluster/mcp",
+  "title": "SEOcluster.ai — Google Search Console SEO MCP Server",
+  "description": "Google Search Console page ownership, cannibalization checks, SEO briefs, Page Edits & GEO gate.",
+  "version": "0.4.0",
+  "websiteUrl": "https://seocluster.ai/seo-mcp-server",
+  "repository": {
+    "url": "https://github.com/jfaccioli/seocluster-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://seocluster.ai/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer sc_live_... personal API key (free at https://seocluster.ai/integrations)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
