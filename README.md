@@ -69,6 +69,34 @@ claude mcp add --transport http --scope user seocluster https://seocluster.ai/ap
 
 ---
 
+## Example Prompt & Compact Output
+
+Ask your coding agent before creating or editing a page:
+
+> *"Check `seocluster_site_ownership` for our last 28 days with `check_live_redirects=true` before creating a new landing page for emergency plumbing."*
+
+Illustrative compact response (under 6 KB instead of raw GSC CSV dumps):
+
+```json
+{
+  "window_days": 28,
+  "conflicts": [
+    {
+      "cluster": "emergency plumber perth",
+      "status": "split_ownership",
+      "owner_url": "/services/emergency-plumbing/",
+      "competing_urls": ["/blog/emergency-plumber-tips/"],
+      "recommended_action": "consolidate_into_owner"
+    }
+  ],
+  "live_redirects_filtered": 2
+}
+```
+
+Instead of inventing a third competing URL, the agent updates the existing owner page and runs `seocluster_prose_and_geo_gate` before opening a PR.
+
+---
+
 ## All 11 Tools Exposed
 
 | Tool | Purpose | Credit Cost |
@@ -89,4 +117,4 @@ claude mcp add --transport http --scope user seocluster https://seocluster.ai/ap
 
 ## License
 
-MIT License (companion configuration & manifest repository). Hosted service operated by [SEOcluster.ai](https://seocluster.ai).
+MIT License (companion configuration & manifest repository). Hosted service operated by [SEOcluster.ai](https://seocluster.ai) — built by Jimmy Faccioli ([jimmytech.com.au](https://jimmytech.com.au)).
