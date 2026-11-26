@@ -3,8 +3,17 @@
   "name": "ai.seocluster/mcp",
   "title": "SEOcluster.ai — Google Search Console SEO MCP Server",
   "description": "Google Search Console page ownership, cannibalization checks, SEO briefs, Page Edits & GEO gate.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "websiteUrl": "https://seocluster.ai/seo-mcp-server",
+  "icons": [
+    {
+      "src": "https://seocluster.ai/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
   "repository": {
     "url": "https://github.com/jfaccioli/seocluster-mcp",
     "source": "github"
